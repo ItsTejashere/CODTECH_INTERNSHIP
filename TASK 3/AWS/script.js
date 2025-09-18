@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiResponseDiv = document.getElementById('api-response');
 
     // Replace this with your GCP API's external IP address.
-    const apiEndpoint = 'http://YOUR_GCP_API_ENDPOINT:80'; 
+    const apiEndpoint = 'http://34.180.19.237:5000'; 
 
     fetchButton.addEventListener('click', async () => {
         apiResponseDiv.innerHTML = '<p>Fetching data...</p>';
@@ -25,4 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
             apiResponseDiv.innerHTML = `<p><strong>Error:</strong> Could not connect to the API.</p><p>Check the console for details.</p>`;
         }
     });
+
 });
